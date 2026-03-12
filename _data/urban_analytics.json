@@ -1,0 +1,87 @@
+[
+	{
+		"id": 1,
+		"title": "Data Preparation and Exploratory Data Analysis (EDA)",
+		"case": "Citi Bike",
+		"pic": "/assets/images/urban/1_eda.png",
+		"desc": "Data Science is a field of science connecting statistics, computer science, and domain knowledge. We would like to discover the pattern of differences and changes, as well as the reasons behind the scene. For any well-designed study, we need to first layout the goal of the study. Using domain knowledge we may list possible factors related to the study, i.e., we need to first design what information may help us to achieve the goal. Taking feasibility and cost into account, we will come up with a list of variables and then gather data (from experiments, surveys, or other studies). On the other hand we may want to learn important insights from existing data. Both the quantity and quality of data determine the success of the study. Once we have the data, we proceed to extract useful information. To use the data correctly and efficiently we must understand the data first. In this lecture, we go through some basic data acquisition/preparation and exploratory data analysis to understand the nature of the data, and to explore plausible relationships among the variables."
+	},
+	{
+		"id": 2,
+		"title": "Spatial Data",
+		"case": "Citi Bike",
+		"pic": "/assets/images/urban/2_spatial.jpg",
+		"desc": "One of the fundamental challenges in the urban analysis is the spatial relationships among the observations. The first step to understanding the spatial relationship is to understand how to operate spatial data and visualize the spatial structure. It is also imperative to associate the data of interest with their location. As pervasive geographic data are becoming available in cities around the world, we need to equip ourselves with proper toolkits. <br><br>In this lecture, we will continue with the Citi bike case study from the last lecture. We will study how to visualize the bike stations and the trips. Then we will introduce the common data structure for spatial data – simple feature access, a standard that is used in many geographical information systems (GIS), and the sf package."
+	},
+	{
+		"id": 3,
+		"title": "Spatial Networks: Network, Centrality, Clustering",
+		"case": "Citi Bike, NYC Bike Network",
+		"pic": "/assets/images/urban/3_network.png",
+		"desc": "Networks are ubiquitous in our daily life and play a crucial role in our lives – social networks, social media, economic networks, transportation networks, you name it. Networks, to be specific, are used to represent the relationships between the objects of interest. The study of networks dates back to the 18th by Euler and the United States National Research Council defines network science as “the study of network representations of physical, biological, and social phenomena leading to predictive models of these phenomena.” The research on network is still very active today.<br><br>As we have seen in previous lectures, urban phenomena can be also represented using networks, such as bike trips and bike routes. There is also a surge in the application of network analysis methods in urban and regional studies in the past decade. Research has shown that network analysis measures can be useful predictors for a number of interesting urban phenomena and can provide insights into wider sociological, economical and geographic factors in certain areas. For our Citibike case study, our goal of this lecture is to study: <br><br>1. Where are the centers of the bike network?<br>2. What are the clusters? <br><br>The methods we introduce in this lecture is general and can be applied to other type of networks as well."
+	},
+	{
+		"id": 4,
+		"title": "Principal Component Analysis",
+		"case": "AirBnB",
+		"pic": "/assets/images/urban/4_pca.png",
+		"desc": "Massive data is easily available to us. How can we efficiently extract important information from a large number of features or variables which will possess the following nice properties: <br><br> 1. <b>Dimension reduction/noise reduction</b>: They are “closed” to the original variables but only with a few newly formed variables. <br> 2. <b>Grouping variables/subjects efficiently</b>: They will reveal insightful grouping structures. <br>3. <b>Visualization</b>: we can display high dimensional data. <br><br>Principle Component Analysis is a powerful method to extract low dimension variables. One may search among all linear combinations of the original variables and find a few of them to achieve the three goals above. Each newly formed variable is called a Principle Component. PCA is closely related to Singular Value Decomposition (SVD). Both PCA and Singular Value Decomposition are successfully applied in many fields such as face recognition, recommendation system, text mining, Gene array analyses among others. PCA is unsupervised learning. There will be no responses. It works well in clustering analyses. In addition, PCs can be used as input in supervised learning as well."
+	},
+	{
+		"id": 5,
+		"title": "Regression",
+		"case": "Chicago House Price",
+		"pic": "/assets/images/urban/5_regression.png",
+		"desc": "Data Science is a field of science. We try to extract useful information from data. In order to use the data efficiently and correctly we must understand the data first. According to the goal of the study, combining the domain knowledge, we then design the study. In this lecture we first go through some basic explore data analysis to understand the nature of the data, some plausible relationship among the variables.<br><br>Data mining tools have been expanded dramatically in the past 20 years. Linear model as a building block for data science is simple and powerful. We introduce/review linear models. The focus is to understand what is it we are modeling; how to apply the data to get the information; to understand the intrinsic variability that statistics have."
+	},
+	{
+		"id": 6,
+		"title": "Large Data, Sparsity and LASSO",
+		"case": "Crime Rate, COVID-19",
+		"pic": "/assets/images/urban/6_regularization.png",
+		"desc": "Linear model with least squared estimates are simple, easy produce and easy interpret. It often works well for the purpose of prediction. However when there are many predictors it is hard to find a set of \"important predictors\". In addition, when the number of predictors p is larger than the number of the observations n we can not estate all the coefficients. In this lecture we introduce LASSO (Least Absolute Shrinkage and Selection Operator) to produce a sparse model. One may view LASSO as a model selection scheme. K-Fold Cross Validation Errors will be introduced and used. [Figure source Hastie et al. (2009)]"
+	},
+	{
+		"id": 7,
+		"title": "Spatial Regression",
+		"case": "Chicago House Price",
+		"pic": "/assets/images/urban/7_spatial_regression.png",
+		"desc": "Classical regression assumes the data is independent, while we have seen in spatial data and spatial network lectures, observations are often related with each other. In particular, “everything is related to everything else, but near things are more related than distant things.” – the first law of geography by Waldo Tobler. It is, therefore, important to account for the correlation between near things. <br><br>To quantify the relationships between things/observations, we use the concept of spatial autocorrelation. Spatial regression, on the other hand, is a method that takes spatial autocorrelation into account when modeling the relationship between variables."
+	},
+	{
+		"id": 8,
+		"title": "Classification",
+		"case": "Fannie May",
+		"pic": "",
+		"desc": "What are the important risk factors of default for mortgage lenders to decide whether they should approve the loan? What determines an employee being a desirable one for the firm? What are possible risk factors related to heart diseases? How to model a categorical variable conveniently and efficiently? Logistic regression model are the most commonly used methods to model the probability of an event. We then automatically get a linear classification rules. Various criteria are introduced. Analogous to least squared solutions for the usual regression models, we use maximum likelihood estimations."
+	},
+	{
+		"id": 9,
+		"title": "Text Mining",
+		"case": "Yelp Review",
+		"pic": "/assets/images/urban/8_tm.png",
+		"desc": "In modern data mining, we often encounter the situation where a text may contain important, useful information about response of interest. Can we predict how much one likes a movie, a restaurant or a product based on his/her reviews? One simple but effective way of learning from a text is through bag of words to convert raw text data into a numeric matrix. We first turn each text into a vector of frequency of words. The bag of words approach can be extended using the n-gram or k-skip-n-gram techniques to account for the semantics of word ordering. Then we apply existing methods that use numerical matrices to either extract useful information or carry out predictions. We will extend the regularization technique (LASSO) to classification problems.<br><br>In this lecture through the Yelp case study, we will use the tm package to transform text into a word frequency matrix. We will build a classifier and conduct sentiment analysis. Finally we build a word cloud to exhibit words for good reviews and bad reviews respectively."
+	},
+	{
+		"id": 10,
+		"title": "Neural Network / Deep Learning",
+		"pic": "/assets/images/urban/10_NN.png",
+		"case": "Yelp Review / MNIST CIFAR10",
+		"desc": "This lecture provides an introduction to Neural Network and Convolutional Neural Network. We will see how neural network borrows the idea of cognitive science and models the behavior of neurons so as to mimic the perception process of human being. On high level, Neural Network is a “parametric” model with huge number of unknown parameters. It is easy to understand the entire set up with knowledge of regressions. Thank to the CS people who has been developing efficient, fast computation algorithm we are able to estimate millions unknown parameters within no time. <br><br>Though the neural network model is easy for us to understand but there are a set of new terminologies introduced. Based on the neural network model, we will set up the architecture (model specification) with input layer, hidden layers and output layer and apply the package to several case studies. A well known case study MNIST will be carried out here through the basic NN."
+	},
+	{
+		"id": 11,
+		"title": "Large Language Model (LLM)",
+		"pic": "/assets/images/urban/11_LLM.png",
+		"case": "Yelp Review",
+		"desc": "In modern data mining, we often encounter the situation where a text may contain important, useful information about response of interest. In this module, we will cover how to use LLMs and Transformers to analyze text data. Specifically, we will use the HuggingFace transformer pipeline in order to perform sentiment analysis on a given text. We will also use the Transformer models to answer questions based on the text data. Finally, we will use the pipelines in order to summarize the text.",
+		"url": "https://drive.google.com/drive/folders/1tvt6AV9ZI4n58RcTQ4-WEuZzfvyzzJ9f?usp=share_link"
+	},
+	{
+		"id": 12,
+		"title": "Decision Trees and Random Forest",
+		"pic": "/assets/images/urban/9_tree.png",
+		"case": "Chicago House Price",
+		"desc": "Regression combining with regularization works for many studies, especially in the case where we try to identify important attributes. Its simple interpretation and well established theory makes the method classical and useful. On the other hand the strong model assumptions may not be met.<br><br> For the purpose of prediction, a model free approach may gain more in accuracy. We start with decision trees. The predictors will be partitioned into boxes. Sample mean in each box is the predicted value for all the subjects in the box. While wild search of optimal boxes is impossible, we use binary, top-down, greedy, recursive algorithm to build a tree. It enjoys the simplicity, easy to interpret. Interactions can be detected through the tree. On the other hand the greedy search is unnecessarily providing the global optimal solution. Also a tree can easily overfit. While the training error is small, the variance is also big. As a result the testing error may suffer.<br><br>To reduce the prediction error from a single equation, one idea is to take the average of many very different perdition equations. Bagging and Random Forest are proposed to aggregate many Bootstrap trees. To make trees uncorrelated, a single random tree is built by randomly take m many variables to be split at each node.<br><br>In general, we want to bag MANY different equations. They can be completely different methods, such as linear model, lasso equations with different lambda, random forests with different mtry, split predictors.<br><br>Decision trees, bagging and random forests are all readily/easily extended to classification problems. To build a tree we use sample proportions to estimate the probability of the outcome, instead of sample means. The criteria choosing the best split can be entropy, gini index and misclassification errors."
+	}
+]

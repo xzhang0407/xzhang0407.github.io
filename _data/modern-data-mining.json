@@ -1,0 +1,68 @@
+[
+	{
+		"id": 1,
+		"title": "Data Preparation and Exploratory Data Analysis (EDA)",
+		"pic": "/assets/images/modern-data-mining/1_eda.png",
+		"desc": "Data Science is a field of science connecting statistics, computer science, and domain knowledge. We would like to discover the pattern of differences and changes, as well as the reasons behind the scene. For any well-designed study, we need to first layout the goal of the study. Using domain knowledge we may list possible factors related to the study, i.e., we need to first design what information may help us to achieve the goal. Taking feasibility and cost into account, we will come up with a list of variables and then gather data (from experiments, surveys, or other studies). On the other hand we may want to learn important insights from existing data. Both the quantity and quality of data determine the success of the study. Once we have the data, we proceed to extract useful information. To use the data correctly and efficiently we must understand the data first. In this lecture, we go through some basic data acquisition/preparation and exploratory data analysis to understand the nature of the data, and to explore plausible relationships among the variables."
+	},
+	{
+		"id": 2,
+		"title": "Principal Component Analysis",
+		"pic": "/assets/images/modern-data-mining/2_pca.png",
+		"desc": "Massive data is easily available to us. How can we efficiently extract important information from a large number of features or variables which will possess the following nice properties: <br><br> 1. <b>Dimension reduction/noise reduction</b>: They are “closed” to the original variables but only with a few newly formed variables. <br> 2. <b>Grouping variables/subjects efficiently</b>: They will reveal insightful grouping structures. <br>3. <b>Visualization</b>: we can display high dimensional data. <br><br>Principle Component Analysis is a powerful method to extract low dimension variables. One may search among all linear combinations of the original variables and find a few of them to achieve the three goals above. Each newly formed variable is called a Principle Component. PCA is closely related to Singular Value Decomposition (SVD). Both PCA and Singular Value Decomposition are successfully applied in many fields such as face recognition, recommendation system, text mining, Gene array analyses among others. PCA is unsupervised learning. There will be no responses. It works well in clustering analyses. In addition, PCs can be used as input in supervised learning as well."
+	},
+	{
+		"id": 3,
+		"title": "Clustering Analysis",
+		"pic": "/assets/images/modern-data-mining/3_clustering.png",
+		"desc": "Clustering is the task of grouping together a set of objects in a way that objects in the same cluster are more similar to each other than to objects in other clusters. Similarity is an amount that reflects the strength of relationship between two data objects. Clustering is mainly used for exploratory data mining. It is used in many fields such as machine learning, pattern recognition, image analysis, information retrieval, bioinformatics, data compression, and computer graphics. <br><br> Given a set of features X1,X2,...,Xp measured on n observations, the goal is to discover interesting things about the measurements on X1,X2,...,Xp. Is there an informative way to visualize the data? Can we discover subgroups among the variables or among the observations? <br><br>Among many methods, k-means and Hierarchical clustering are most commonly used. We will go in depth with k-means and leave Hierarchical clustering method for students to study. We will demonstrate the power of using PCA to lower dimension for clustering via an mRNA sequencing case study."
+	},
+	{
+		"id": 4,
+		"title": "Regression",
+		"pic": "/assets/images/modern-data-mining/4_regression.png",
+		"desc": "Data Science is a field of science. We try to extract useful information from data. In order to use the data efficiently and correctly we must understand the data first. According to the goal of the study, combining the domain knowledge, we then design the study. In this lecture we first go through some basic explore data analysis to understand the nature of the data, some plausible relationship among the variables.<br><br>Data mining tools have been expanded dramatically in the past 20 years. Linear model as a building block for data science is simple and powerful. We introduce/review linear models. The focus is to understand what is it we are modeling; how to apply the data to get the information; to understand the intrinsic variability that statistics have."
+	},
+	{
+		"id": 5,
+		"title": "Model Selection",
+		"pic": "",
+		"desc": "Multiple regression is a simple yet powerful tool in statistics and machine learning. When we have a number of predictors available, searching for a model that is parsimonious yet good becomes necessary. Sometimes we even have the situation that number of predictors are larger than the sample size. In such cases we can not find unique least squared estimators in a linear model. In this lecture we introduce a model selection treatment by first defining model accuracy such as Prediction Errors. We then propose the commonly used statistics Cp, BIC and AIC and Testing Errors to help choose a good model. A function Regsubsets by leaps are used to do model selection. A complete case study to predict baseball players will be done."
+	},
+	{
+		"id": 6,
+		"title": "Large Data, Sparsity and LASSO",
+		"pic": "/assets/images/modern-data-mining/6_regularization.png",
+		"desc": "Linear model with least squared estimates are simple, easy produce and easy interpret. It often works well for the purpose of prediction. However when there are many predictors it is hard to find a set of \"important predictors\". In addition, when the number of predictors p is larger than the number of the observations n we can not estate all the coefficients. In this lecture we introduce LASSO (Least Absolute Shrinkage and Selection Operator) to produce a sparse model. One may view LASSO as a model selection scheme. K-Fold Cross Validation Errors will be introduced and used. [Figure source Hastie et al. (2009)]"
+	},
+	{
+		"id": 7,
+		"title": "Classification",
+		"pic": "",
+		"desc": "What are possible risk factors related to heart diseases? What determines an employee being a desirable one for the firm? How to tell wehther a review in Amazon is real or not? How to model a categorical variable conveniently and efficiently? Logistic regression model are the most commonly used methods to model the probability of an event. We then automatically get a linear classification rules. Various criteria are introduced. Analogous to least squared solutions for the usual regression models, we use maximum likelihood estimations."
+	},
+	{
+		"id": 8,
+		"title": "Text Mining",
+		"pic": "/assets/images/modern-data-mining/8_tm.png",
+		"desc": "In modern data mining, we often encounter the situation where a text may contain important, useful information about response of interest. Can we predict how much one likes a movie, a restaurant or a product based on his/her reviews? One simple but effective way of learning from a text is through bag of words to convert raw text data into a numeric matrix. We first turn each text into a vector of frequency of words. The bag of words approach can be extended using the n-gram or k-skip-n-gram techniques to account for the semantics of word ordering. Then we apply existing methods that use numerical matrices to either extract useful information or carry out predictions. We will extend the regularization technique (LASSO) to classification problems.<br><br>In this lecture through the Yelp case study, we will use the tm package to transform text into a word frequency matrix. We will build a classifier and conduct sentiment analysis. Finally we build a word cloud to exhibit words for good reviews and bad reviews respectively."
+	},
+	{
+		"id": 9,
+		"title": "Decision Trees and Random Forest",
+		"pic": "/assets/images/modern-data-mining/9_tree.png",
+		"desc": "Linear regression (logistic regression) combining with regularization works for many studies, especially in the case where we try to identify important attributes. Its simple interpretation and well established theory makes the method classical and useful. On the other hand the strong model assumptions may not be met.<br><br> For the purpose of prediction, a model free approach may gain more in accuracy. We start with decision trees. The predictors will be partitioned into boxes. Sample mean in each box is the predicted value for all the subjects in the box. While wild search of optimal boxes is impossible, we use binary, top-down, greedy, recursive algorithm to build a tree. It enjoys the simplicity, easy to interpret. Interactions can be detected through the tree. On the other hand the greedy search is unnecessarily providing the global optimal solution. Also a tree can easily overfit. While the training error is small, the variance is also big. As a result the testing error may suffer.<br><br>To reduce the prediction error from a single equation, one idea is to take the average of many very different perdition equations. Bagging and Random Forest are proposed to aggregate many Bootstrap trees. To make trees uncorrelated, a single random tree is built by randomly take m many variables to be split at each node.<br><br>In general, we want to bag MANY different equations. They can be completely different methods, such as linear model, lasso equations with different lambda, random forests with different mtry, split predictors.<br><br>Decision trees, bagging and random forests are all readily/easily extended to classification problems. To build a tree we use sample proportions to estimate the probability of the outcome, instead of sample means. The criteria choosing the best split can be entropy, gini index and misclassification errors."
+	},
+	{
+		"id": 10,
+		"title": "Neural Network",
+		"pic": "/assets/images/modern-data-mining/10_NN.png",
+		"desc": "This lecture provides an introduction to Neural Network and Convolutional Neural Network. We will see how neural network borrows the idea of cognitive science and models the behavior of neurons so as to mimic the perception process of human being. On high level, Neural Network is a “parametric” model with huge number of unknown parameters. It is easy to understand the entire set up with knowledge of regressions. Thank to the CS people who has been developing efficient, fast computation algorithm we are able to estimate millions unknown parameters within no time. <br><br>Though the neural network model is easy for us to understand but there are a set of new terminologies introduced. Based on the neural network model, we will set up the architecture (model specification) with input layer, hidden layers and output layer and apply the package to several case studies. A well known case study MNIST will be carried out here through the basic NN."
+	},
+	{
+		"id": 11,
+		"title": "Convolutional Neural Network",
+		"pic": "",
+		"desc": "This lecture provides an introduction to Convolutional Neural Network. One of the most successful applications of deep learning is image recognition, we will explore the image-specialized Convolutional Neural Network (CNN) and see how it performs compared to the regular neural network on MNIST. The core of CNN is the convolutional layer and the pooling layer."
+	}
+]

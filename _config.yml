@@ -1,0 +1,25 @@
+title: Xinyuan Zhang
+description: Personal homepage
+
+permalink: pretty
+exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json", "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
+
+url: "https://xzhang0407.github.io"
+baseurl: ""
+
+search_enabled: false
+search_tokenizer_separator: /[\s/]+/
+heading_anchors: true
+footer_content: "Copyright &copy; 2025 Xinyuan Zhang."
+color_scheme: nil
+
+plugins:
+  - jekyll-seo-tag
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false

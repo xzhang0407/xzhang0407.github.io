@@ -1,0 +1,38 @@
+﻿[	
+	{
+		"type": "Under review",
+		"work_type": "Under review",
+		"id": 1,
+		"order": 1, 
+		"title": "Designing for Digital Traces: Towards Holistically Contextualized Tensor-based Representations",
+		"authors": [
+			{
+				"name": "Xinyuan Zhang"
+			},
+			{
+				"name": "Junhui Cai"
+			},
+			{
+				"name": "Jingjing Li"
+			},
+			{
+				"name": "Ahmed Abbassi"
+			}
+		],
+		"year": 2025,
+		// "source": "",
+		// "citation_url": "",
+		// "cites_url": "https://arxiv.org/abs/2111.12921",
+		"use": true,
+		"topic":[
+			{
+				"topic": "Digital Data"
+			},
+			{
+				"topic": "xxxx"
+			}
+		],
+		"award": "INFORMS Workshop on Data Science 2023, 2024",
+		"abstract": "Understanding online user journeys has become crucial for explaining and predicting digital behavior. Existing methodologies often rely on principled feature engineering, which, while successful in predicting and interpreting customer journeys, are constructed artificially and thus present certain limitations. A more holistic and parsimonious framework is needed to fully comprehend omni-channel customer journeys. In this paper, we propose a tensor-based framework to capture users' digital channel interactions over time. We represent customer journeys through the lens of a three-dimensional user-channel-time tensor. We adopt tensor decomposition to extract interpretable latent factors. These factors capture digital trace patterns with explanatory and predictive power. For prediction, we incorporate the tensor into a deep learning architecture to learn the nonlinear and temporal convolutional patterns in customers' journeys. We evaluate our framework on 24 million raw user clickstreams and show that our methodology not only enhances our understanding of customer decision-making processes in purchases, but also significantly improves conversion prediction."
+	}
+]

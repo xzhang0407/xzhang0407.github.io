@@ -1,0 +1,32 @@
+[	
+	{
+		"id": 11,
+		"title": "Towards a holistic representation of online customer journeys: A tensor-based framework",
+		"talks": [
+			{
+				"type": "Invited talk",
+				"time": 2024,
+				"meeting": " INFORMS Workshop on Data Science",
+				"place": "xxx"
+			},
+			{
+				"type": "Invited talk",
+				"time": 2023,
+				"meeting": "INFORMS Workshop on Data Science",
+				"place": "xxxx"
+			}
+		]
+	},
+	{
+		"id": 10,
+		"title": "???",
+		"talks": [
+			{
+				"type": "Invited talk",
+				"time": 2023,
+				"meeting": "POMS",
+				"place": "xxx"
+			}
+		]
+	}
+]
