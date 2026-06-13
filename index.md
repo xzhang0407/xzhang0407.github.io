@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: Home
 nav_order: 1
 description: "Homepage"
 permalink: /
@@ -13,10 +13,13 @@ permalink: /
 		</div>
 		<div class="col">
 			<p class="text-justify">
-				I'm Xinyuan Zhang, a PhD candidate in Analytics at the <a href="https://mendoza.nd.edu/research-faculty/academic-departments/information-technology-analytics-operations/">IT, Analytics, and Operations Department (ITAO)</a> at the Mendoza College of Business, University of Notre Dame. I am advised by <a href="https://ahmedabbasi.com">Ahmed Abbasi</a> and Jeff Cai. I am expected to graduate in May 2027.
+				Welcome to my homepage!
 			</p>
 			<p class="text-justify">
-				My research interests include computational design science, digital trace, healthcare, machine learning, tensor decomposition, and multimodal AI.
+				I am a PhD candidate in Analytics at the <a href="https://mendoza.nd.edu/research-and-faculty/departments/information-technology-analytics-and-operations/">IT, Analytics, and Operations Department (ITAO)</a> at the Mendoza College of Business, University of Notre Dame, advised by <a href="https://ahmedabbasi.com">Ahmed Abbasi</a> and <a href="https://jcai.me">Jeff Cai</a>. Prior to joining my PhD program, I received my M.S. in Statistics from UCLA and a Bachelor of Commerce from the University of Sydney. I am expected to graduate in May 2027.
+			</p>
+			<p class="text-justify">
+				My research lies at the intersection of computational methods and human-centered AI, with applications in e-commerce and digital health. I develop theory-guided artifacts that span the information value chain: from holistic tensor-based representations of digital trace data, to multimodal AI-assisted decision support systems. My work draws on design science, Bayesian methods, and large language models, and aims to make AI systems more interpretable, actionable, and impactful.
 			</p>
 		</div>
 	</div>
@@ -34,54 +37,3 @@ permalink: /
   <a href="https://github.com/xzhang0407" target="_blank" aria-label="GitHub" style="margin-right: 24px;"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
   <a href="https://www.linkedin.com/in/xinyuan-zhang-050948170/" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
 </div>
-
-<br>
-
-## Co-authors
-<div>
-	<div class="panel panel-default">
-	  <div class="panel-body" id="coauthors">
-	  </div>
-	</div>
-</div>
-
-<script>
-  function lastNameSort(a,b) {
-    return a.split(" ").pop()[0] > b.split(" ").pop()[0] ? 1 : -1;
-  };
-
-  var pubs = {{ site.data.publications | jsonify }}, 
-      coauthors = {{ site.data.coauthors | jsonify }};
-  var authors = [];
-  for (var pub, i = 0; pub = pubs[i++];) {
-    var author_arr = pub.authors;
-    for (var author, j = 0; author = author_arr[j++];) {
-      if (author.name != "Xinyuan Zhang") {
-        authors.push(author.name);
-      }
-    }
-  }
-  sorted_authors = authors.sort(lastNameSort);
-  var author_obj = {};
-  for(var author, i = 0; author = sorted_authors[i++];) {
-  	if(author in author_obj) {
-  		author_obj[author]++;
-  	} else {
-  		author_obj[author] = 1;
-  	}
-  }
-  var author_arr = Object
-    .keys(author_obj)
-    .map(k => ({ "name": k, "count": author_obj[k] }));
-  var merged = author_arr
-    .map(x => Object.assign(x, coauthors.find(y => y.name == x.name )));
-
-  var parsed = "<p class='text-justify'>";
-  for(var item, i = 0; item = merged[i++];) {
-    parsed += '<a href="' + item.homepage + '" style="font-size:' + (1)*15 + 'px">' +
-        item.name + '</a>';
-    if(i < merged.length) {parsed += ",\t ";}
-  }
-  parsed += "</p>";
-  $("#coauthors").html(parsed);
-</script>
