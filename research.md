@@ -9,26 +9,11 @@ nav_order: 2
 # Publications
 {: .no_toc }
 
-<!-- {% assign sorted_publications = site.data.publications | where:"type",type | sort: 'year' %}
-{% for paper in sorted_publications %}
-{% assign paper = paper_hash[1] %}
-<ul class="list-group list-group-flush">
-  <li class="list-group-item">
-    <p> {{ paper.title }} </p>
-    <a href="{{ paper.citation_url }}">
-    </a>
-    {% for author in paper.authors %}
-    	{{ author.name }},
-    {% endfor %}
-  </li>
-</ul>
-{% endfor %} -->
-
 <div class="row">
   <div class="col-sm-12 mb-3 mt-3">
-    {% assign types = "Under review, Working paper" | split: ", " %}
+    {% assign types = "Journal Publications, Conference Papers, Under Review" | split: ", " %}
       {% for type in types %}
-        <button type="button" class="btn btn-link btn-sm" onclick="document.getElementById('{{ type | join: '_' }}').scrollIntoView();"> {{ type }}s </button>
+        <button type="button" class="btn btn-link btn-sm" onclick="document.getElementById('{{ type | replace: ' ', '_' }}').scrollIntoView();"> {{ type }} </button>
     {% endfor %}
     <div class="input-group">
       <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="&#xF002; &nbsp; Search for title, author, journal" style="font-family:Arial, FontAwesome">
@@ -37,9 +22,9 @@ nav_order: 2
         <div class="dropdown-menu">
           <a class="dropdown-item" href="#" onclick="categorySelector('All')">All Topics</a>
           <div role="separator" class="dropdown-divider"></div>
-          {% assign categories = "Digital Data" | split: ", " %} 
+          {% assign categories = "Generative AI, Text Analytics, Multimodal AI, Mental Health, Digital Trace Data, Tensor Decomposition" | split: ", " %}
           {% for category in categories %}
-            <a class="dropdown-item" href="#{{category | replace: ' ', '-'}}" onclick="categorySelector('{{ category }}')">{{ category }}</a>  
+            <a class="dropdown-item" href="#{{category | replace: ' ', '-'}}" onclick="categorySelector('{{ category }}')">{{ category }}</a>
           {% endfor %}
         </div>
       </div>
@@ -48,57 +33,42 @@ nav_order: 2
 </div>
 
 <div class="row" id="myItems">
-  {% assign types = "Under review, Working paper" | split: ", " %}
-  {% assign counter = 0 %}
+  {% assign types = "Journal Publications, Conference Papers, Under Review" | split: ", " %}
   {% for type in types %}
   <div class="col-sm-12 mb-3">
-    <span id="{{ type | join: '_' }}"></span>
-    <h2 style="display:inline;"> {{ type }}s </h2>
-    <h5 style="text-align:right;float:right;"><a href="#top">[ Top ]</a></h5> 
-    {% assign sorted_publications_year = site.data.publications | where:"work_type",type | sort: 'year' | reverse | group_by: 'year' %}
-    {% for paper_year in sorted_publications_year %}
-    {% assign papers = paper_year.items | sort: 'order' %}
+    <span id="{{ type | replace: ' ', '_' }}"></span>
+    <h2 style="display:inline;"> {{ type }} </h2>
+    <h5 style="text-align:right;float:right;"><a href="#top">[ Top ]</a></h5>
+    {% assign counter = 0 %}
+    {% assign papers = site.data.publications | where: "work_type", type | sort: "order" %}
     {% for paper in papers %}
     {% assign counter = counter | plus: 1 %}
     <div class="card border-light">
       <div class="card-body">
         <h3 class="card-title">{{ counter }}. {{ paper.title }}</h3>
-        <h5 class="card-subtitle mb-2 text-muted pb-1"> 
+        <h5 class="card-subtitle mb-2 text-muted pb-1">
           {% for author in paper.authors %}
-            {% if forloop.index < paper.authors.size %} 
-              {% if author.name == 'Junhui Cai' %}
-                <b>{{ author.name }}</b>,
-              {% else %} {{ author.name }},
-              {% endif %}
-            {% else %} 
-              {% if author.name == 'Junhui Cai' %}
-                <b>{{ author.name }}</b>
-              {% else %} {{ author.name }}
-              {% endif %}
+            {% if author.name == 'Zhang X.' or author.name == 'Xinyuan Zhang' %}
+              <b>{{ author.name }}</b>{% unless forloop.last %},{% endunless %}
+            {% else %}
+              {{ author.name }}{% unless forloop.last %},{% endunless %}
             {% endif %}
           {% endfor %}
-          ({{ paper.year }})
+          {% if paper.year %} ({{ paper.year }}) {% endif %}
         </h5>
-        <h5 class="card-text"> 
+        <h5 class="card-text">
           {{ paper.source }}
         </h5>
-        <h5 class="card-text"> 
-          <b>{{ paper.award }}</b>
+        {% if paper.note %}
+        <h5 class="card-text">
+          <i>{{ paper.note }}</i>
         </h5>
-        <h5 class="card-subtitle mb-2 pb-1" id="category" style="display: none;"> 
-          Categories: 
-          {% for topic in paper.topic %}
-            {% if forloop.index < paper.topic.size %} 
-              {{ topic.topic }},
-            {% else %} 
-              {{ topic.topic }}
-            {% endif %}
-          {% endfor %}
+        {% endif %}
+        <h5 class="card-subtitle mb-2 pb-1" id="category" style="display: none;">
+          Categories:
+          {% for topic in paper.topic %}{% if forloop.last %}{{ topic.topic }}{% else %}{{ topic.topic }},{% endif %}{% endfor %}
         </h5>
-        <h5 class="card-text"> 
-          <!-- [<a data-toggle="collapse" data-target="#collapseDescription{{ paper.id }}" aria-expanded="false" aria-controls="collapseDescription{{ paper.id }}" href="">
-            Description
-          </a>] -->
+        <h5 class="card-text">
           {% if paper.abstract %}
           [<a data-toggle="collapse" data-target="#collapseAbstract{{ paper.id }}" aria-expanded="false" aria-controls="collapseAbstract{{ paper.id }}" href="">
             Abstract
@@ -129,35 +99,20 @@ nav_order: 2
               SSRN
             </a>]
           {% endif %}
-          {% if paper.article %}
-            [<a href="{{ paper.article.url }}" target="_blank">
-              {{ paper.article.name }}
-            </a>]
-          {% endif %}
         </h5>
         <div class="collapse" id="collapseAbstract{{ paper.id }}">
           <div class="container" style="text-align:justify">
-            <!-- <hr/> -->
             <p style="font-size:15px">
             {{ paper.abstract }}
             </p>
           </div>
         </div>
-        <!-- <div class="collapse" id="collapseDescription{{ paper.id }}">
-          <div class="container">
-            <hr/>
-            {{ paper.description }}
-          </div>
-        </div> -->
       </div>
-    </div>  
-    {% endfor %}
+    </div>
     {% endfor %}
   </div>
   {% endfor %}
 </div>
-
-
 
 <script>
   function myFunction() {
