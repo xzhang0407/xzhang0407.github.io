@@ -16,7 +16,7 @@ permalink: /
 				Welcome to my homepage!
 			</p>
 			<p class="text-justify">
-				I am a PhD candidate in Analytics at the <a href="https://mendoza.nd.edu/research-and-faculty/departments/information-technology-analytics-and-operations/">IT, Analytics, and Operations Department (ITAO)</a> at the Mendoza College of Business, University of Notre Dame, advised by <a href="https://ahmedabbasi.com">Ahmed Abbasi</a> and <a href="https://jcai.me">Jeff Cai</a>. Prior to joining my PhD program, I received my M.S. in Statistics from UCLA and a Bachelor of Commerce from the University of Sydney. I am expected to graduate in May 2027.
+				I am a PhD candidate in Analytics at the <a href="https://mendoza.nd.edu/research-and-faculty/departments/information-technology-analytics-and-operations/">IT, Analytics, and Operations Department (ITAO)</a> at the Mendoza College of Business, University of Notre Dame, advised by <a href="https://ahmedabbasi.com">Ahmed Abbasi</a> and <a href="https://jh-cai.com/">Jeff Cai</a>. Prior to joining my PhD program, I received my M.S. in Statistics from UCLA and a Bachelor of Commerce from the University of Sydney. I am expected to graduate in May 2027.
 			</p>
 			<p class="text-justify">
 				My research lies at the intersection of computational methods and human-centered AI, with applications in e-commerce and digital health. I develop theory-guided artifacts that span the information value chain: from holistic tensor-based representations of digital trace data, to multimodal AI-assisted decision support systems. My work draws on design science, Bayesian methods, and large language models, and aims to make AI systems more interpretable, actionable, and impactful.
