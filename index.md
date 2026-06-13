@@ -27,9 +27,13 @@ permalink: /
 ## Contact
 
 - Email: [xzhang38@nd.edu](mailto:xzhang38@nd.edu)
-- Google Scholar: [scholar.google.com/citations?user=-pMwboQAAAAJ](https://scholar.google.com/citations?user=-pMwboQAAAAJ&hl=en)
-- GitHub: [github.com/xzhang0407](https://github.com/xzhang0407)
 - Address: Mendoza College of Business, Notre Dame, IN 46556
+
+<div style="margin-top: 12px;">
+  <a href="https://scholar.google.com/citations?user=-pMwboQAAAAJ&hl=en" target="_blank" aria-label="Google Scholar" style="margin-right: 24px;"><i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i></a>
+  <a href="https://github.com/xzhang0407" target="_blank" aria-label="GitHub" style="margin-right: 24px;"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+  <a href="https://www.linkedin.com/in/xinyuan-zhang-050948170/" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+</div>
 
 <br>
 

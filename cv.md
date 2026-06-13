@@ -5,14 +5,14 @@ nav_order: 3
 ---
 
 <a href="{{
- '/assets/XYZ_CV_260429.pdf' | prepend: site.baseurl }}">Download</a>
+ '/assets/CV.pdf' | prepend: site.baseurl }}">Download</a>
 {: .no_toc }
 
 <div class="container">
 	<div class="row">
 		<div class="col">
 <object data="{{
- '/assets/XYZ_CV_260429.pdf' | prepend: site.baseurl }}" width="900" height="1000" type='application/pdf'/>
+ '/assets/CV.pdf' | prepend: site.baseurl }}" width="900" height="1000" type='application/pdf'/>
 </object>
 </div>
 </div>
