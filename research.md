@@ -11,7 +11,7 @@ nav_order: 2
 
 <div class="row">
   <div class="col-sm-12 mb-3 mt-3">
-    {% assign types = "Journal Publications, Conference Papers, Under Review" | split: ", " %}
+    {% assign types = "Journal Publications, Conference Papers, Under Review, Working Papers" | split: ", " %}
       {% for type in types %}
         <button type="button" class="btn btn-link btn-sm" onclick="document.getElementById('{{ type | replace: ' ', '_' }}').scrollIntoView();"> {{ type }} </button>
     {% endfor %}
@@ -33,7 +33,7 @@ nav_order: 2
 </div>
 
 <div class="row" id="myItems">
-  {% assign types = "Journal Publications, Conference Papers, Under Review" | split: ", " %}
+  {% assign types = "Journal Publications, Conference Papers, Under Review, Working Papers" | split: ", " %}
   {% for type in types %}
   <div class="col-sm-12 mb-3">
     <span id="{{ type | replace: ' ', '_' }}"></span>
@@ -92,6 +92,11 @@ nav_order: 2
           {% if paper.code_url %}
             [<a href="{{ paper.code_url }}" target="_blank">
               Code
+            </a>]
+          {% endif %}
+          {% if paper.demo_url %}
+            [<a href="{{ paper.demo_url }}" target="_blank">
+              Demo
             </a>]
           {% endif %}
           {% if paper.ssrn_url %}

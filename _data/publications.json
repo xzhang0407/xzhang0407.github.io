@@ -41,6 +41,7 @@
 		],
 		"year": 2026,
 		"source": "<i>Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (System Demonstrations)</i>, San Diego, July 2-7, 2026",
+		"demo_url": "https://dash-m5h.org/",
 		"use": true,
 		"topic": [
 			{ "topic": "Multimodal AI" },
@@ -85,5 +86,77 @@
 			{ "topic": "Tensor Decomposition" }
 		],
 		"abstract": "Tensors are generalized forms of matrices that extend to higher dimensions. Count-based tensors arise naturally in many application domains where data record event counts across multiple modes. Effective decomposition of such count tensors demands methods that can handle structural sparsity, incorporate observation-level heterogeneity, and support downstream statistical and practical inference. There remains a need for software implementations of algorithms that effectively combine these capabilities. We present CoSparTA, an open-source R package implementation of a context-aware sparsity-adaptive empirical Bayes tensor decomposition algorithm tailored for sparse count tensors. CoSparTA imposes sparsity-adaptive spike-and-slab priors that allow each latent factor to independently adapt to its own sparsity level, and incorporates observation-level covariates directly into the decomposition process rather than as a post-hoc adjustment. The package supports posterior uncertainty quantification, covariate coefficient inference, missing data handling, and visualization through a unified pipeline. Simulation experiments demonstrate consistently improved pattern and tensor recovery over competing methods, with the advantage most pronounced under extreme sparsity and high rank, and reliable recovery of observation-level covariate effects. A real-data demonstration on a large-scale clickstream dataset illustrates the pipeline in practice. CoSparTA is available at https://github.com/nd-hal/CoSparTA"
+	},
+	{
+		"id": 5,
+		"order": 2,
+		"work_type": "Conference Papers",
+		"title": "Designing for Digital Traces: Towards Holistically Contextualized Tensor-based Representations",
+		"authors": [
+			{ "name": "Zhang X." },
+			{ "name": "Cai J." },
+			{ "name": "Li J." },
+			{ "name": "Abbasi A." }
+		],
+		"year": 2025,
+		"source": "<i>46th AIS International Conference on Information Systems (ICIS)</i>, Nashville, December 14-17, 2025"
+	},
+	{
+		"id": 6,
+		"order": 3,
+		"work_type": "Conference Papers",
+		"title": "Designing Support for Sensemaking in Multimodal, Multi-model Mental Health Assessments",
+		"authors": [
+			{ "name": "Ademaj G." },
+			{ "name": "Zhang X." },
+			{ "name": "Abbasi A." },
+			{ "name": "Sarker S." },
+			{ "name": "Sarker S." }
+		],
+		"year": 2025,
+		"source": "<i>46th AIS International Conference on Information Systems (ICIS)</i>, Nashville, December 14-17, 2025"
+	},
+	{
+		"id": 7,
+		"order": 1,
+		"work_type": "Working Papers",
+		"title": "Sensemaking in Multimodal, Multi-model Environments: Designing Support for Remote Mental Health Assessments",
+		"authors": [
+			{ "name": "Ademaj G." },
+			{ "name": "Zhang X." },
+			{ "name": "Abbasi A." },
+			{ "name": "Sarker S." },
+			{ "name": "Sarker S." }
+		],
+		"source": "<i>To be submitted to INFORMS Management Science</i>",
+		"abstract": "Remote mental health assessments routinely generate rich multimodal data in the form of video, audio, and text. This creates new opportunities to support psychiatrists who are overloaded with patients, face increasing documentation demands, and risk missing subtle behaviors or emotional cues. These multimodal data are processed by different machine learning models, creating the need to support sensemaking in complex, multimodal and multi-model environments. This research presents a theory-driven approach to designing sensemaking tools for remote mental health assessments. Drawing on Integrative Sensemaking Theory and Signal Detection Theory, the study derives a set of design requirements and instantiates them in a dashboard prototype to support sensemaking during mental health assessments. The evaluation employs a set of design validity measures to assess the artifact's support of sensemaking, tracing clinician attention patterns, integrative sensemaking framings, and diagnostic outcomes."
+	},
+	{
+		"id": 8,
+		"order": 2,
+		"work_type": "Working Papers",
+		"title": "Theory-guided Multi-Source In-Context Learning Framework for LLM-based Health Assessments",
+		"authors": [
+			{ "name": "Zhang X." },
+			{ "name": "Cai J." },
+			{ "name": "Mousavi R." },
+			{ "name": "Kitchens B." },
+			{ "name": "Abbasi A." }
+		],
+		"source": "<i>Model development.</i>",
+		"abstract": ""
+	},
+	{
+		"id": 9,
+		"order": 3,
+		"work_type": "Working Papers",
+		"title": "Volunteer Behavior in Online Communities",
+		"authors": [
+			{ "name": "Zhang X." },
+			{ "name": "Yoo E." },
+			{ "name": "Pedraza-Martinez A." }
+		],
+		"source": "<i>Model development.</i>",
+		"abstract": ""
 	}
 ]
