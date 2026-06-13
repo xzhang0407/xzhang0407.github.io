@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: About
 nav_order: 1
 description: "Homepage"
 permalink: /
@@ -9,19 +9,14 @@ permalink: /
 <div class="container">
 	<div class="row">
 		<div class="d-none d-md-block col-sm-3">
-			<img src="{{'/assets/images/xinyuan-zhang.jpg'| prepend:site.baseurl}}">
+			<img src="{{'/assets/images/xinyuan-zhang.jpg'| prepend:site.baseurl}}" alt="Photo of Xinyuan Zhang" style="max-width:100%; border-radius:4px;">
 		</div>
 		<div class="col">
 			<p class="text-justify">
-				Welcome to my homepage! 
+				I'm Xinyuan Zhang, a PhD candidate in Analytics at the <a href="https://mendoza.nd.edu/research-faculty/academic-departments/information-technology-analytics-operations/">IT, Analytics, and Operations Department (ITAO)</a> at the Mendoza College of Business, University of Notre Dame. I am advised by <a href="https://ahmedabbasi.com">Ahmed Abbasi</a> and Jeff Cai. I am expected to graduate in May 2027.
 			</p>
 			<p class="text-justify">
-				I am a PhD candidate in Analytics at the <a href="https://mendoza.nd.edu/research-faculty/academic-departments/information-technology-analytics-operations/">IT, Analytics, and Operations Department</a> <a href="https://mendoza.nd.edu/research-faculty/academic-departments/information-technology-analytics-operations/">(ITAO)</a> at the Mendoza College of Business of the University of Notre Dame.
-			</p>
-			<p class="text-justify">xxx
-			</p>
-			<p class="text-justify">
-				Previously, I received Bachelor's degree xxx.
+				My research interests include computational design science, digital trace, healthcare, machine learning, tensor decomposition, and multimodal AI.
 			</p>
 		</div>
 	</div>
@@ -29,12 +24,14 @@ permalink: /
 
 <br>
 
-
 ## Contact
 
-- Email: [xzhang38@nd.edu](xzhang38@nd.edu)
-- Address:  Mendoza College of Business, Notre Dame, IN 46556
-<br><br>
+- Email: [xzhang38@nd.edu](mailto:xzhang38@nd.edu)
+- Google Scholar: [#](#)
+- GitHub: [github.com/xzhang0407](https://github.com/xzhang0407)
+- Address: Mendoza College of Business, Notre Dame, IN 46556
+
+<br>
 
 ## Co-authors
 <div>

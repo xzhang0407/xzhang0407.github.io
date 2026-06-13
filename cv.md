@@ -1,7 +1,7 @@
 ---
 layout: default
 title: CV
-nav_order: 5
+nav_order: 3
 ---
 
 <a href="{{
