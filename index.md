@@ -27,7 +27,7 @@ permalink: /
 ## Contact
 
 - Email: [xzhang38@nd.edu](mailto:xzhang38@nd.edu)
-- Google Scholar: [#](#)
+- Google Scholar: [scholar.google.com/citations?user=-pMwboQAAAAJ](https://scholar.google.com/citations?user=-pMwboQAAAAJ&hl=en)
 - GitHub: [github.com/xzhang0407](https://github.com/xzhang0407)
 - Address: Mendoza College of Business, Notre Dame, IN 46556
 
