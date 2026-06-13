@@ -9,8 +9,6 @@ nav_order: 4
 
 **Designing Support for Sensemaking in Multimodal, Multi-model Mental Health Assessments**
 
-**Zhang X.**, Cai J., Abbasi A.
-
 - *(Scheduled)* INFORMS Annual Meeting 2026, Session: AI and Text Analytics in Information Systems, San Francisco, November 1-4, 2026
 - SIG TECH (Special Interest Group on Technology to Enact Change) 2025, Nashville, December 17, 2025
 - 46th AIS International Conference on Information Systems (ICIS), Nashville, December 14-17, 2025
