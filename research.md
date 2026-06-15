@@ -6,7 +6,7 @@ nav_order: 2
 
 <span id="top"></span>
 
-# Publications
+# Research
 {: .no_toc }
 
 <div class="row">
