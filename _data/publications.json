@@ -71,7 +71,7 @@
 	{
 		"id": 4,
 		"order": 2,
-		"work_type": "Under Review",
+		"work_type": "Working Papers",
 		"title": "CoSparTA: An R Package for Covariate-Aware Sparsity-Adaptive Tensor Analysis",
 		"authors": [
 			{ "name": "Zhang X." },
@@ -79,7 +79,7 @@
 			{ "name": "Li J." },
 			{ "name": "Abbasi A." }
 		],
-		"source": "<i>Submitted to INFORMS Journal on Computing</i>",
+		"source": "<i>Preparing for submission to Journal of Machine Learning Research, August 2026</i>",
 		"code_url": "https://github.com/nd-hal/CoSparTA",
 		"use": true,
 		"topic": [
@@ -128,12 +128,12 @@
 			{ "name": "Sarker S." },
 			{ "name": "Sarker S." }
 		],
-		"source": "<i>To be submitted to INFORMS Management Science</i>",
+		"source": "<i>Preparing for submission to Management Science, August 2026</i>",
 		"abstract": "Remote mental health assessments routinely generate rich multimodal data in the form of video, audio, and text. This creates new opportunities to support psychiatrists who are overloaded with patients, face increasing documentation demands, and risk missing subtle behaviors or emotional cues. These multimodal data are processed by different machine learning models, creating the need to support sensemaking in complex, multimodal and multi-model environments. This research presents a theory-driven approach to designing sensemaking tools for remote mental health assessments. Drawing on Integrative Sensemaking Theory and Signal Detection Theory, the study derives a set of design requirements and instantiates them in a dashboard prototype to support sensemaking during mental health assessments. The evaluation employs a set of design validity measures to assess the artifact's support of sensemaking, tracing clinician attention patterns, integrative sensemaking framings, and diagnostic outcomes."
 	},
 	{
 		"id": 8,
-		"order": 2,
+		"order": 3,
 		"work_type": "Working Papers",
 		"title": "Theory-guided Multi-Source In-Context Learning Framework for LLM-based Health Assessments",
 		"authors": [
@@ -148,7 +148,7 @@
 	},
 	{
 		"id": 9,
-		"order": 3,
+		"order": 4,
 		"work_type": "Working Papers",
 		"title": "Volunteer Behavior in Online Communities",
 		"authors": [
