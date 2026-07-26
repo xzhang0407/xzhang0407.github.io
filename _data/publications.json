@@ -135,12 +135,10 @@
 		"id": 8,
 		"order": 3,
 		"work_type": "Working Papers",
-		"title": "Theory-guided Multi-Source In-Context Learning Framework for LLM-based Health Assessments",
+		"title": "Behavioral Grounded Digital Twins in Large-Scale E-commerce",
 		"authors": [
 			{ "name": "Zhang X." },
 			{ "name": "Cai J." },
-			{ "name": "Mousavi R." },
-			{ "name": "Kitchens B." },
 			{ "name": "Abbasi A." }
 		],
 		"source": "<i>Model development.</i>",
