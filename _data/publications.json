@@ -60,7 +60,7 @@
 			{ "name": "Li J." },
 			{ "name": "Abbasi A." }
 		],
-		"source": "<i>Second round review at INFORMS Information Systems Research</i>",
+		"source": "<i>Preparing for third round review at INFORMS Information Systems Research</i>",
 		"use": true,
 		"topic": [
 			{ "topic": "Digital Trace Data" },
@@ -139,6 +139,7 @@
 		"authors": [
 			{ "name": "Zhang X." },
 			{ "name": "Cai J." },
+			{ "name": "Yoo Y." },
 			{ "name": "Abbasi A." }
 		],
 		"source": "<i>Model development.</i>",
@@ -153,6 +154,21 @@
 			{ "name": "Zhang X." },
 			{ "name": "Yoo E." },
 			{ "name": "Pedraza-Martinez A." }
+		],
+		"source": "<i>Model development.</i>",
+		"abstract": ""
+	},
+	{
+		"id": 10,
+		"order": 5,
+		"work_type": "Working Papers",
+		"title": "Theory-guided Multi-Source In-Context Learning Framework for LLM-based Health Assessments",
+		"authors": [
+			{ "name": "Zhang X." },
+			{ "name": "Cai J." },
+			{ "name": "Mousavi R." },
+			{ "name": "Kitchens B." },
+			{ "name": "Abbasi A." }
 		],
 		"source": "<i>Model development.</i>",
 		"abstract": ""
